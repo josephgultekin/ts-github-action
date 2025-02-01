@@ -1,0 +1,17 @@
+name: "My First TypeScript Action"
+description: "A simple GitHub Action written in TypeScript"
+author: "Gokhan Gultekin"
+
+inputs:
+  name:
+    description: "Gokhan Gultekin"
+    required: true
+    default: "GitHub User"
+
+outputs:
+  greeting:
+    description: "The greeting message"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
